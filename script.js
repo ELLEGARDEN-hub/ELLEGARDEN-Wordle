@@ -1,4 +1,4 @@
-const correctWord = "baboe";  // 정답 단어
+const correctWord = "jonmaru";  // 정답 단어
 let attempts = 0;
 const maxAttempts = 6;
 
@@ -9,20 +9,20 @@ function checkWord() {
 
     let guess = inputElement.value.toUpperCase().trim();
 
-    if (guess.length !== 5) {
-        messageElement.textContent = "5글자 단어를 입력하세요!";
+    if (guess.length !== 7) {
+        messageElement.textContent = "7글자 단어를 입력하세요!";
         return;
     }
 
     if (attempts >= maxAttempts) {
-        messageElement.textContent = "게임 오버! 정답: " + correctWord;
+        messageElement.textContent = "게임 오버!"
         return;
     }
 
     const row = document.createElement("div");
     row.classList.add("row");
 
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 7; i++) {
         const tile = document.createElement("div");
         tile.classList.add("tile");
         tile.textContent = guess[i];
