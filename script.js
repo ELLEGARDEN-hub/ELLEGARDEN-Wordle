@@ -1,4 +1,4 @@
-const correctWord = "KINGLID";  // 정답 단어
+const correctWord = "NOWHERE";  // 정답 단어
 let attempts = 0;
 const maxAttempts = 5;
 
