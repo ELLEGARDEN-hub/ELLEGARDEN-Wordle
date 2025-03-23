@@ -1,6 +1,6 @@
 const correctWord = "jonmaru";  // 정답 단어
 let attempts = 0;
-const maxAttempts = 6;
+const maxAttempts = 5;
 
 function checkWord() {
     const inputElement = document.getElementById("word-input");
@@ -45,7 +45,7 @@ function checkWord() {
         messageElement.textContent = "축하합니다! 정답을 맞췄어요!";
         inputElement.disabled = true;
     } else if (attempts === maxAttempts) {
-        messageElement.textContent = "실패! 정답은 " + correctWord;
+        messageElement.textContent = "실패!"
     }
 
     inputElement.value = "";
