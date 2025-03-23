@@ -2,8 +2,11 @@ body {
     text-align: center;
     font-family: Arial, sans-serif;
     background-image: url('https://t1.daumcdn.net/cafeattach/1IHuH/a004d790c8264420068c96a413778732036de436');
-    
+    background-size: cover; /* 화면 전체를 채우도록 설정 */
+    background-position: center; /* 중앙 정렬 */
+    background-repeat: no-repeat; /* 배경 반복 방지 */
 }
+
 
 #game-board {
     display: grid;
