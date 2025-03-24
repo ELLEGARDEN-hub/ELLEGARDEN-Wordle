@@ -9,8 +9,8 @@ function checkWord() {
 
     let guess = inputElement.value.toUpperCase().trim();
 
-    if (guess.length !== 7) {
-        messageElement.textContent = "7글자 단어를 입력하세요!";
+    if (guess.length !== 8) {
+        messageElement.textContent = "8글자 단어를 입력하세요!";
         return;
     }
 
@@ -22,7 +22,7 @@ function checkWord() {
     const row = document.createElement("div");
     row.classList.add("row");
 
-    for (let i = 0; i < 7; i++) {
+    for (let i = 0; i < 8; i++) {
         const tile = document.createElement("div");
         tile.classList.add("tile");
         tile.textContent = guess[i];
