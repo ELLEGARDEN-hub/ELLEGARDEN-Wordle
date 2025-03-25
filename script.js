@@ -1,4 +1,4 @@
-const correctWord = "CHANGEOK";  // 정답 단어
+const correctWord = "KOUKASEN";  // 정답 단어
 let attempts = 0;
 const maxAttempts = 5;
 
