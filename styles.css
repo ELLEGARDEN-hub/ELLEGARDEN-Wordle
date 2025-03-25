@@ -10,6 +10,7 @@ body {
     gap: 5px;
     justify-content: center;
     margin-bottom: 20px;
+    margin-left: 20px;  /* 왼쪽 여백 추가 */
 }
 
 .tile {
